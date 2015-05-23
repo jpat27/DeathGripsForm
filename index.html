@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Death Grips Form</title>
+        <script>
+        function loadXMLDoc()
+            {
+                var xmlhttp;
+                if(window.XMLHttpRequest)
+                {
+                    xmlhttp=new XMLHttpRequest();    
+                }
+                else
+                {
+                    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");    
+                }
+                xmlhttp.onreadystatechange=function()
+                {
+                    if(xmlhttp.readyState==4 && xmlhttp.status==200)
+                    {
+                        document.getElementById("head").style.backgroundColor = "#00ff00";
+                    }
+                }
+                xmlhttp.open("GET","ajax_info.txt",true);
+                xmlhttp.send();
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="head">Death Grips Discog Review Form</h1>
+        <form>
+        Song Title:<br>
+        <input type="text" name="songTitle"><br><br>
+        Album:<br>
+        <input type="text" name="album">
+        <br>
+        <br>
+        <br>
+        Rating:
+        <select name="Rating">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select><br><br>
+        Thoughts:<br>
+        <br>
+        <textarea name="thoughts" rows="25" cols="150"></textarea><br><br>
+        <button type="button" onclick="loadXMLDoc()">Submit</button>
+        </form>
+    </body>
+</html>
