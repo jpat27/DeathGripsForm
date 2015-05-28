@@ -92,12 +92,12 @@
         </script>
         <script>
         function showResults(){
-            window.location.href = "http://localhost/TestForm/test.txt";   
+            window.location.href = "./results.html";   
         }
         </script>
     </head>
     <body>
-        <form method="post" action="handler.php">
+        <form method="post" action="./handler.php">
         Song Title:<br>
         <input id="songs" type="text" name="songTitle"><br><br>
         Album:<br>

@@ -1,0 +1,22 @@
+<html>
+ <head>
+   <title>Results</title>
+   <style type="text/css">
+     results{
+     position:absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     }
+   </style>
+   <script type="text/javascript">
+     function goBack() {
+       
+     }
+   </script>
+ </head>
+ <body>
+   <iframe id="results" src="./test.txt"></iframe>
+   <button >Submit Another Entry</button>
+ </body>
+</html>
